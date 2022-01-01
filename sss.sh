@@ -7,7 +7,7 @@
 #   Github: https://github.com/lidalao/ServerStatus
 #========================================================
 
-GITHUB_RAW_URL="https://raw.githubusercontent.com/lidalao/ServerStatus/master"
+GITHUB_RAW_URL="https://raw.githubusercontent.com/Terry-Lzz/ServerStatus/master"
 
 red='\033[0;31m'
 green='\033[0;32m'
@@ -91,7 +91,7 @@ install_dashboard(){
     
     install_docker
 
-    if [  "$(docker ps -q -f name=bot4sss)" ]; then
+    if [  "$(docker ps -q -f name=serverstatus_bot)" ]; then
         return 0
     fi
 

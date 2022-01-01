@@ -13,8 +13,8 @@ After=syslog.target
 Type=simple
 User=root
 Group=root
-WorkingDirectory=/opt/sss/agent/
-ExecStart=/usr/bin/python3 /opt/sss/agent/client-linux.py SERVER=sss_host USER=sss_user PASSWORD=sss_pass
+WorkingDirectory=/code/serverstatus_agent/
+ExecStart=/usr/bin/python3 /code/serverstatus_agent/client-linux.py SERVER=sss_host USER=sss_user PASSWORD=sss_pass
 Restart=always
 #Environment=DEBUG=true
 
